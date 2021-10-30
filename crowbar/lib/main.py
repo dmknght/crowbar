@@ -8,14 +8,14 @@ try:
     import argparse
     import tempfile
     import subprocess
-    from lib.nmap import Nmap
-    from lib.core.common import *
-    from lib.core.logger import Logger
-    from lib.core.threadpool import ThreadPool
-    from lib.core.exceptions import CrowbarExceptions
-    from lib.core.iprange import IpRange, InvalidIPAddress
+    from crowbar.lib.nmap import Nmap
+    from crowbar.lib.core.common import *
+    from crowbar.lib.core.logger import Logger
+    from crowbar.lib.core.threadpool import ThreadPool
+    from crowbar.lib.core.exceptions import CrowbarExceptions
+    from crowbar.lib.core.iprange import IpRange, InvalidIPAddress
 except Exception as err:
-    from lib.core.exceptions import CrowbarExceptions
+    from crowbar.lib.core.exceptions import CrowbarExceptions
 
     raise CrowbarExceptions(str(err))
 

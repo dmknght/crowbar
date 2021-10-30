@@ -4,9 +4,9 @@ try:
     import socket
     import struct
     from functools import reduce
-    from lib.core.exceptions import CrowbarExceptions
+    from crowbar.lib.core.exceptions import CrowbarExceptions
 except Exception as err:
-    from lib.core.exceptions import CrowbarExceptions
+    from crowbar.lib.core.exceptions import CrowbarExceptions
 
     raise CrowbarExceptions(str(err))
 

@@ -2,9 +2,9 @@ try:
     import sys
     from queue import Queue
     from threading import Thread
-    from lib.core.exceptions import CrowbarExceptions
+    from crowbar.lib.core.exceptions import CrowbarExceptions
 except Exception as err:
-    from lib.core.exceptions import CrowbarExceptions
+    from crowbar.lib.core.exceptions import CrowbarExceptions
 
     raise CrowbarExceptions(str(err))
 

@@ -1,9 +1,9 @@
 try:
     import logging
     import os.path
-    from lib.core.exceptions import CrowbarExceptions
+    from crowbar.lib.core.exceptions import CrowbarExceptions
 except Exception as err:
-    from lib.core.exceptions import CrowbarExceptions
+    from crowbar.lib.core.exceptions import CrowbarExceptions
 
     raise CrowbarExceptions(str(err))
 
@@ -13,7 +13,7 @@ class Logger:
         self.logger_log = logging.getLogger('log_file')
         self.logger_log.setLevel(logging.INFO)
 
-        handler_log = logging.FileHandler(os.path.join(".", log_file), "a", encoding=None, delay="true")
+        handler_log = logging.FileHandler(os.path.join("", log_file), "a", encoding=None, delay="true")
         handler_log.setLevel(logging.INFO)
         formatter = logging.Formatter("%(asctime)s %(message)s", "%Y-%m-%d %H:%M:%S")
         handler_log.setFormatter(formatter)
@@ -27,7 +27,7 @@ class Logger:
         self.logger_output = logging.getLogger('output_file')
         self.logger_output.setLevel(logging.INFO)
 
-        handler_out = logging.FileHandler(os.path.join(".", output_file), "a", encoding=None, delay="true")
+        handler_out = logging.FileHandler(os.path.join("", output_file), "a", encoding=None, delay="true")
         handler_out.setLevel(logging.INFO)
         formatter = logging.Formatter("%(asctime)s %(message)s", "%Y-%m-%d %H:%M:%S")
         handler_out.setFormatter(formatter)
