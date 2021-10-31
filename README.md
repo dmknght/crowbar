@@ -15,7 +15,7 @@ Currently **Crowbar** supports:
 ## What does this forked project has?
 - Move `lib` to `crowbar` so the package is more friendly to debian packaging. It can use pybuild to build package easily
 - Added patched from Pull #64 by `Christian "cclauss" Clauss`
-- TODO: add Pull #60 by Xib3rR4dAr
+- Added Pull #60 by Xib3rR4dAr
 - TODO: Fix some other open issues on original github
 ### Installation
 
